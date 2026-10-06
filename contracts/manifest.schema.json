@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.local/schemas/manifest-v1",
+  "title": "Echo package manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "kind", "name", "version", "author", "description"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+    },
+    "kind": {
+      "enum": ["agent", "skill", "plugin"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "instructions": {
+      "type": "string",
+      "maxLength": 12000,
+      "default": ""
+    },
+    "panel": {
+      "type": "string",
+      "pattern": "^[a-z0-9.-]+$",
+      "default": "overview"
+    },
+    "capabilities": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "string",
+        "maxLength": 64
+      },
+      "default": []
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "enum": ["network", "files.read", "files.write"]
+      },
+      "default": []
+    }
+  }
+}
