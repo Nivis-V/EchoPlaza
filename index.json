@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "packages": [
     {
-      "sha256": "8d49dfd16a16417f2ad7fb2b878ca87b1c4caa0d5e0e01bdcac89b12c40a0960",
-      "manifest": "agents/nivis.storyboard-teacher/0.1.0/manifest.json",
-      "version": "0.1.0",
-      "id": "nivis.storyboard-teacher"
+      "id": "nivis.storyboard-teacher",
+      "version": "0.2.0",
+      "manifest": "agents/nivis.storyboard-teacher/0.2.0/manifest.json",
+      "sha256": "99c23f2e6f48501325abeb526e0b715a01a9d7c2d1b447227158a410e0fe3d8f"
     }
   ]
 }
