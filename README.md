@@ -14,6 +14,17 @@ Echo 的 Git 静态软件包库。分发 Agent 角色、描述与版本索引，
 
 [查看 Agent 软件包](agents/nivis.storyboard-teacher/0.2.0/manifest.json)
 
+## 官方 Agent：抖音短视频剧本老师
+
+- 标识：nivis.douyin-script-teacher，版本 0.1.0，面板 douyin.script。
+- 专职抖音短视频剧本：主题/素材到开场、结构、口播或对白和完整成稿。
+- 可选观众、形式、时长和风格，默认由老师安排，可导出文字 HTML。
+- 不调用生图，不做 AI 视频提示词或运营投流方案。
+
+[查看剧本老师软件包](agents/nivis.douyin-script-teacher/0.1.0/manifest.json)
+
+两位老师使用 Echo 0.2.0 桌面版；官方源码独立到 EchoAgents，面板由桌面构建提供。
+
 ## 使用流程
 
 使用支持新版 storyboard.project 和 HTML 导出的 Echo 桌面版：

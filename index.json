@@ -6,6 +6,12 @@
       "version": "0.2.0",
       "manifest": "agents/nivis.storyboard-teacher/0.2.0/manifest.json",
       "sha256": "99c23f2e6f48501325abeb526e0b715a01a9d7c2d1b447227158a410e0fe3d8f"
+    },
+    {
+      "id": "nivis.douyin-script-teacher",
+      "version": "0.1.0",
+      "manifest": "agents/nivis.douyin-script-teacher/0.1.0/manifest.json",
+      "sha256": "83eaa36ed39616665efd26db4153a2f0bbb43c6934c8b4d8ccbbb8698436ebfe"
     }
   ]
 }
